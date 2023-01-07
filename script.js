@@ -6,22 +6,44 @@ let arr = [
   { id: 3, name: "karen", age: "19", profession: "admin" },
 ];
 
+
+
+/*
 function PrintDeveloperswithMap() {
-  //Write your code here
+  // console.log all the employees who have the profession of a developer using the map function.
 }
 
-function PrintDeveloperbyForEach() {
-  //Write your code here
-}
 
+  // console.log all the employees who have the profession of a developer using the for each function.
+arr.forEach(PrintDeveloperbyForEach);
+function PrintDeveloperbyForEach(item)
+ {
+console.log(item);
+ }
+*/
 function addData() {
-  //Write your code here
+  //, make another such employee object and append that to this array given below and then console.log it. (15 Marks)
+let obj1= { id: 5, name: "dj", age: "25", profession: "disc jokey" }
+  arr.push(obj1);
+  console.log(arr);
 }
 
 function removeAdmin() {
-  //Write your code here
+  //remove the object where the profession is admin. console.log the changed array. 
+ arr.splice(2,1);
+ console.log(arr);
 }
 
 function concatenateArray() {
-  //Write your code here
+  // Make another array with 3 objects just like the one in the above-given array. The objects should be different,
+  // with different ids, and all other parameters should be different too. 
+  //Then concatenate these 2 arrays and console.log.
+  let arr1 = [
+    { id: 3, place: "delhi", pin: "402", landmark: "school" },
+    { id: 4, place: "mumbai", pin: "302", landmark: "hospital" },
+    { id: 5, place: "kolkata", pin: "607", landmark: "metro" },
+  ];
+  
+ let newarray = arr.concat(arr1);
+ console.log(newarray);
 }
