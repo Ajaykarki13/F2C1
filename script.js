@@ -8,22 +8,36 @@ let arr = [
 
 
 
-/*
+
 function PrintDeveloperswithMap() {
   // console.log all the employees who have the profession of a developer using the map function.
+let printdeveloper = arr.map(print =>
+  {
+    if(print.profession==="developer")
+    {
+      console.log(print)
+    }
+  })
+
 }
 
 
   // console.log all the employees who have the profession of a developer using the for each function.
-arr.forEach(PrintDeveloperbyForEach);
-function PrintDeveloperbyForEach(item)
+
+function PrintDeveloperbyForEach()
  {
-console.log(item);
+  arr.forEach(PrintDev=>
+    {
+      if(PrintDev.profession==="developer")
+      {
+        console.log(PrintDev)
+      }
+    });
  }
-*/
+
 function addData() {
   //, make another such employee object and append that to this array given below and then console.log it. (15 Marks)
-let obj1= { id: 5, name: "dj", age: "25", profession: "disc jokey" }
+let obj1= { id: 4, name: "dj", age: "25", profession: "disc jokey" }
   arr.push(obj1);
   console.log(arr);
 }
